@@ -35,9 +35,9 @@
                     <router-link to = "/cart"><li>
                         <a class="nav-item nav-link">Cart</a>
                     </li></router-link>
-                    <router-link to = "/user-login"><li id="login">
+                    <!-- <router-link to = "/user-login"><li id="login">
                         <a class="nav-item nav-link login">Log in</a>
-                    </li></router-link>
+                    </li></router-link> -->
                 </ul>
             </div>
           </nav>

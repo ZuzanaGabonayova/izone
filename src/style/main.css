@@ -112,6 +112,16 @@ nav ul li a:hover {
   color: #6d6d6d;
 }
 
+@media only screen and (max-width: 990px) {
+  #about .hero-img {
+    margin-top: 125px;
+  }
+  #about .aboutpage .intro .about-container {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+  }
+}
+
 footer {
   background-color: #1f1f28;
   height: 130px;
