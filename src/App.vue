@@ -1,15 +1,27 @@
 <template>
-  <v-app>
-    <v-main>
-      <router-view/>
-    </v-main>
-  </v-app>
+  
+  <div>
+    <NavigationComponent />
+
+    <Suspense>
+      <router-view class="w-full lg:w-10/12" />
+    </Suspense>
+
+    <FooterComponent />
+  </div>
+
 </template>
 
 <script>
+import NavigationComponent from "./components/NavigationComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
   name: 'App',
+  components: {
+    NavigationComponent,
+    FooterComponent
+  },
 
   data: () => ({
     //
