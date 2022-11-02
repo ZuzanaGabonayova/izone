@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+nav {
+  background-color: none;
+  height: 80px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #1f1f28;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .navbar-brand {
+  width: auto;
+  margin-left: 2rem;
+}
+
+nav #navbar-nav {
+  margin-left: 1rem !important;
+}
+
+nav ul {
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #f4f4f4 !important;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #a3a3a3 !important;
+  text-decoration: none !important;
+}
+
+@media only screen and (max-width: 990px) {
+  nav {
+    height: auto;
+    /* .navbar-toggler{
+            border: 1px solid $light-neon-green;
+        }
+ */
+  }
+  nav .navbar-brand {
+    margin-left: 0rem;
+  }
+  nav ul {
+    margin-right: 0rem;
+    gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#about {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 100vh;
+}
+
+#about .hero-img {
+  margin-top: 80px;
+  background-position: cover;
+}
+
+#about .aboutpage {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#about .aboutpage .intro .about-container {
+  margin-top: 2rem;
+  padding: 2rem 6rem;
+}
+
+#about .aboutpage .intro .about-container h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #1f1f28;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#about .aboutpage .intro .about-container h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: justify;
+  color: #333333;
+}
+
+#about .aboutpage .intro .about-container h2 .shopnow {
+  color: #321c9b;
+}
+
+#about .aboutpage .intro .about-container p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  text-align: justify;
+  color: #6d6d6d;
+}
+
+footer {
+  background-color: #1f1f28;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .row {
+  width: 80vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .copyright .copy {
+  color: #f4f4f4;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 !important;
+}
+
+footer .admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: -1.7rem;
+}
+
+footer .admin .admin-link {
+  color: #6d6d6d !important;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 !important;
+}
+
+footer .admin .admin-link:hover {
+  color: #a3a3a3 !important;
+  text-decoration: none !important;
+}
+/*# sourceMappingURL=main.css.map */

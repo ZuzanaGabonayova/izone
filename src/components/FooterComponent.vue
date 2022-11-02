@@ -5,12 +5,15 @@
 
         <div class="col-sm-12 col-md-12 copyright">
 
-            <p>Copyright © {{ new Date().getFullYear() }} - iZone</p>
+            <p class="copy">Copyright © {{ new Date().getFullYear() }} - iZone</p>
 
-            <p><router-link to="/admin">Admin</router-link></p>
-        
         </div>
+    </div>
 
+    <div class="row">
+        <div class="col-sm-12 col-md-12 admin">
+            <router-link to="/admin"><p class="admin-link">Admin</p></router-link>
+        </div>
     </div>
   </footer>
 

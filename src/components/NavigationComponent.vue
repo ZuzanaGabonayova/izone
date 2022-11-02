@@ -27,16 +27,16 @@
             <div id="navbarNavAltMarkup" class="collapse navbar-collapse">
                 <ul id="navbar-nav" class="navbar-nav ml-auto">
                     <router-link to = "/"><li>
-                        <a class="nav-item nav-link" href="#about">About</a>
+                        <a class="nav-item nav-link">About iZone</a>
                     </li></router-link>
                     <router-link to = "/shop"><li>
-                        <a class="nav-item nav-link" href="#shop">Shop</a>
+                        <a class="nav-item nav-link">iZone Shop</a>
                     </li></router-link>
                     <router-link to = "/cart"><li>
-                        <a class="nav-item nav-link" href="#cart">Cart</a>
+                        <a class="nav-item nav-link">Cart</a>
                     </li></router-link>
-                    <router-link to = "/"><li>
-                        <a class="nav-item nav-link sign-up" href="#login">Log in</a>
+                    <router-link to = "/user-login"><li id="login">
+                        <a class="nav-item nav-link login">Log in</a>
                     </li></router-link>
                 </ul>
             </div>
