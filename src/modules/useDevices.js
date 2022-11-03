@@ -6,6 +6,7 @@ const useDevices = () => {
 
     const devices = ref([])
     const deviceDataRef = collection(db, "devices");
+    const AddItemData = ref({})
 
     //grab data from firebase
     const getDevicesData = () => {
@@ -19,28 +20,25 @@ const useDevices = () => {
         })
     }
 
-    /* let formInput = ref({
-        title: device.title.value,
-        description: device.description.value,
-        price: device.price.value,
-        onstock: device.onstock.value
-    }) */
-    //add static data to firebase
+    //add data to firebase
     const firebaseAddSingleItem = async() => {
         await addDoc(collection(db, "devices"), {
-            title: "test title",
-            description: "test description",
-            price: 100,
-            onstock: false
+            title: AddItemData.value.title,
+            description: AddItemData.value.description,
+            price: AddItemData.value.price,
+            onstock: AddItemData.value.onstock
+        }).then(() => {
+            AddItemData.value = ref([])
         })
     }
 
+    //edit data in firebase
     const firebaseEditSingleItem = async(id) => {
         await updateDoc(doc(deviceDataRef, id), {
-            title: "updated title",
-            description: "updated description",
-            price: 100,
-            onstock: false
+            title: devices.value.find(device => device.id === id).title,
+            description: devices.value.find(device => device.id === id).description,
+            price: devices.value.find(device => device.id === id).price,
+            onstock: devices.value.find(device => device.id === id).onstock
         })
     }
 
@@ -51,6 +49,7 @@ const useDevices = () => {
 
     return{
         devices,
+        AddItemData,
         getDevicesData,
         firebaseAddSingleItem,
         firebaseEditSingleItem,
