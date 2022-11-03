@@ -29,6 +29,14 @@ nav #navbar-nav {
 
 nav ul {
   gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 nav ul li a {
@@ -39,6 +47,15 @@ nav ul li a {
 nav ul li a:hover {
   color: #a3a3a3 !important;
   text-decoration: none !important;
+}
+
+nav ul .cart-icon {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+  -webkit-box-align: end !important;
+      -ms-flex-align: end !important;
+          align-items: flex-end !important;
 }
 
 @media only screen and (max-width: 990px) {

@@ -15,6 +15,9 @@ nav{
     }
     ul{
         gap: 20px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
 
         li{
 
@@ -28,9 +31,13 @@ nav{
                 }
             }
         }
+
+        .cart-icon{
+            justify-content: flex-end!important;
+            align-items: flex-end!important;
+        }
     }
 }
-
 
 @media only screen and (max-width: 990px){
     nav{
