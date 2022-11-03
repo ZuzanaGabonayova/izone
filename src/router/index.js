@@ -21,6 +21,16 @@ const routes = [
     path: '/adminlogin',
     name: 'AdminLoginView',
     component: () => import('../views/AdminLoginView.vue')
+  },
+  {
+    path: '/editview',
+    name: 'EditView',
+    component: () => import('../views/EditDevicesView.vue')
+  },
+  {
+    path: '/addview',
+    name: 'AddView',
+    component: () => import('../views/AddDevicesView.vue')
   }
 ]
 
