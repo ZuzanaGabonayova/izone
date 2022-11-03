@@ -3,10 +3,11 @@
   <div>
     <NavigationComponent />
 
+    <div class="router-view-components">
     <Suspense>
       <router-view></router-view>
     </Suspense>
-
+    </div>
     <FooterComponent />
   </div>
 
@@ -31,4 +32,16 @@ export default {
 
 <style>
 @import "./style/main.css";
+
+.router-view-components{
+  height: fit-content;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 990px){
+  .router-view-components{
+    margin-top: 128px;
+  }
+}
 </style>
