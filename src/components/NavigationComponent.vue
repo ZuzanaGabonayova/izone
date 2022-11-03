@@ -38,6 +38,9 @@
                     <!-- <router-link to = "/user-login"><li id="login">
                         <a class="nav-item nav-link login">Log in</a>
                     </li></router-link> -->
+                    <router-link to="/cart" class="cart-icon">
+                        <li><a class="nav-item nav-link"><i class="fas fa-solid fa-cart-arrow-down"></i></a></li>
+                    </router-link>
                 </ul>
             </div>
           </nav>
