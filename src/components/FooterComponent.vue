@@ -12,7 +12,7 @@
 
     <div class="row">
         <div class="col-sm-12 col-md-12 admin">
-            <router-link to="/admin"><p class="admin-link">Admin</p></router-link>
+            <router-link to="/adminlogin"><p class="admin-link">Admin</p></router-link>
         </div>
     </div>
   </footer>
