@@ -43,6 +43,10 @@ nav{
     nav{
         height: auto;
 
+        #navbar-nav{
+            margin-left: 0rem!important;
+        }
+
         .navbar-brand{
             margin-left: 0rem;
         }

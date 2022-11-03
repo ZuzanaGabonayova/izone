@@ -66,6 +66,9 @@ nav ul .cart-icon {
         }
  */
   }
+  nav #navbar-nav {
+    margin-left: 0rem !important;
+  }
   nav .navbar-brand {
     margin-left: 0rem;
   }
@@ -86,7 +89,6 @@ nav ul .cart-icon {
 }
 
 #about .hero-img {
-  margin-top: 80px;
   background-position: cover;
 }
 
