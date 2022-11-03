@@ -4,7 +4,7 @@
     <NavigationComponent />
 
     <Suspense>
-      <router-view class="w-full lg:w-10/12" />
+      <router-view></router-view>
     </Suspense>
 
     <FooterComponent />
