@@ -1,0 +1,57 @@
+.shop{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $primary-background-color;
+}
+
+.card{
+    display: flex;
+    margin-bottom: 2rem;
+    min-height: 450px;
+    height: fit-content;
+    .card-body{
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end!important;
+        
+        .card-title{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $dark-text-color;
+        }
+        .card-text{
+            font-size: 1rem;
+            color: $paragraph-text-color;
+        }
+    }
+}
+
+.buttons-ae{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+
+    .btn{
+        width: 150px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.edit-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    .btn{
+        width: 150px;
+    }
+}
