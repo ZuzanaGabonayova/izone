@@ -1,5 +1,5 @@
 <template>
-  <!-- <div v-if="isLoggedin"> -->
+  <div v-if="isLoggedin">
     <v-snackbar
         v-model="snackbarEdit"
         >
@@ -38,14 +38,14 @@
           <div class="buttons-ae">
             <v-btn class="btn" color="success" @click="$router.push('adminlogin')">Admin Shop</v-btn>
             <v-btn class="btn" color="primary" @click="$router.push('addview')">Add Items</v-btn>
-            <v-btn class="btn" color="error" @click.prevent="logOut()">LogOut</v-btn>
+            <v-btn @click="logOut" class="btn" color="error" >LogOut</v-btn>
           </div>
           
           <div>
             <div class="row">
               <div class="col-sm-12 col-md-4" v-for="device in devices" :key="device">
                 <div class="card">
-                  <!-- <img :src="device.image" class="card-img-top" alt="..."> -->
+                  <img :src="device.image" class="card-img-top" alt="...">
                   <div class="card-body">
                     
                       <v-form>
@@ -93,25 +93,64 @@
 
     </div>
     
-<!--   </div> -->
+  </div>
+
+  <div v-else>
+        <v-container class="admin-login-form">
+        <v-row>
+            <v-col md="6" xs="12" offset-md="3">
+                <h1 class="shop admin-shop-log text-uppercase">Administrator LogIn</h1>
+                
+                <div class="info">
+                    <v-text-field
+                        v-model="email"
+                        label="Email"
+                        type="email"
+                        required
+                    >
+                    </v-text-field>
+
+                    <v-text-field
+                        v-model="password"
+                        label="Password"
+                        type="password"
+                        required
+                    >
+                    </v-text-field>
+
+                    <v-btn
+                        color="primary"
+                        @click.prevent="logIn()"
+                    >
+                    LogIn
+                    </v-btn>
+                </div>
+            </v-col>
+        </v-row>
+    </v-container>
+  </div>
 </template>
 
 <script setup>
 /* import { ref } from 'vue' */
 import useDevices from '../modules/useDevices'
 import { onMounted } from 'vue';
-// import  useUsers  from '../modules/useUsers'
+import  useUsers  from '../modules/useUsers'
 
 /* let checkbox = ref(false) */
 
-/* const {
-  isLoggedin,
-  isLoggedinTest
+const { 
+  logIn,
+  logOut,
+  email,
+  password,
+  isLoggedInTest,
+  isLoggedin
 } = useUsers()
 
 onMounted(() => {
-  isLoggedinTest()
-}) */
+  isLoggedInTest()
+})
 
 const { 
   snackbarEdit,
