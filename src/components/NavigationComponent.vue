@@ -41,8 +41,37 @@
                     <router-link to="/cart" class="cart-icon">
                         <li><a class="nav-item nav-link"><i class="fas fa-solid fa-cart-arrow-down"></i></a></li>
                     </router-link>
+
+                    <!-- <span>
+                        <v-btn
+                        @click.prevent="logOut()">
+                            LogOut
+                        </v-btn>
+                    </span> -->
                 </ul>
             </div>
           </nav>
 
 </template>
+
+<script setup>
+
+/* import { ref, onMounted } from 'vue';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import useUsers from '@/modules/useUsers';
+
+const { logOut } = useUsers();
+let auth
+const isLoggedIn = ref(false)
+
+onMounted(() =>{
+    auth = getAuth();
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            isLoggedIn.value = true
+        } else {
+            isLoggedIn.value = false
+        }
+    });
+}) */
+</script>
