@@ -154,7 +154,7 @@ nav ul .cart-icon {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 2rem;
-  min-height: 450px;
+  min-height: 480px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -183,6 +183,16 @@ nav ul .cart-icon {
 .card .card-body .card-text {
   font-size: 1rem;
   color: #6d6d6d;
+}
+
+.card .card-body .card-text .instock {
+  color: green;
+  font-weight: bold;
+}
+
+.card .card-body .card-text .notinstock {
+  color: red;
+  font-weight: bold;
 }
 
 .buttons-ae {
@@ -226,6 +236,62 @@ nav ul .cart-icon {
 
 .edit-buttons .btn {
   width: 150px;
+}
+
+.admin-login-form {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin-shop-log {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart-container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 50vh;
+}
+
+.cart-container .cart {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f1f28;
+}
+
+.cart-container .stufff {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer {
